@@ -1,0 +1,6 @@
+name: NerfKeepInventory
+version: '${project.version}'
+main: mcplugins.nerfkeepinventory.NerfKeepInventory
+api-version: 1.19
+authors: [ dogloverblue ]
+description: Nerfing keep inventory to only keep your hotbar, shulker boxes, and armour
