@@ -1,7 +1,13 @@
 package mcplugins.nerfkeepinventory;
 
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.InvalidConfigurationException;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.File;
+import java.io.IOException;
 
 public final class NerfKeepInventory extends JavaPlugin {
 
@@ -11,6 +17,9 @@ public final class NerfKeepInventory extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new OnPlayerDeath(), this);
         Bukkit.getPluginManager().registerEvents(new onRespawn(), this);
         Bukkit.getLogger().info("[NerfKeepInventory] Plugin is up and running!");
+
+        this.saveDefaultConfig();
+
 
     }
 
